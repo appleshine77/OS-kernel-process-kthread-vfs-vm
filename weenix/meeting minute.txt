@@ -1,0 +1,73 @@
+
+//Daily backup
+% make procs-submit
+% mv prods-submit.tar.gz prods-061318-version number-your name.tar.gz
+Version number: 061418-01 ~ 99
+Each time you upgrade version number, please ensure you are based on the previous latest one and include all instead of misoperating and overlapping some.
+
+//Work split:
+kmain.c  //init  — all - by the end of the weekend
+kmutex.c //mux — Cindy
+kthread.c //thread - Yue
+proc.c //process - Wei
+sched.c and sched_helper.c //scheduler — Janhavi
+
+//Dropbox to be used to sync code
+
+//Coding rule
+1) Before you submit the new code, need to download the latest version, adding your updated and guarantee compile no error and warning and then submit it;
+2) never use instant data in your source code, replace it by define and enum in order to others easier understand;
+3) you should pass all passed case list before you submit new codes
+passed case list:
+   	init C=0
+
+//Meeting time
+Time : 13:00 
+Day: Monday, Wednesday, Friday(Mandatory), Saturday, Sunday
+
+Time : 15:00
+Day: Tuesday, Thursday
+
+//Development schedule
+Kernel1 
+  	1) init  — all - by the end of the weekend 6/17;
+
+	2) Wednesday - all - submit your draft codes by git before 6/20 13:00;
+ 		 - all - test codes based on guideline and debug if any problems from 13:00 	
+
+	3) Friday - all - submit your final codes by git before 6/22 13:00;
+ 		 - all - test codes based on guideline and debug if any problems from 13:00  
+
+	4) Saturday - 6/23
+
+Tuesday 6/19 15:00
+	schor - done
+	mutex - add runnable, switch + done
+	thread - procthread_exit + done
+	proc - do_wait, do_exit, proc_create, proc_kill, proc_killall, cleanup
+
+Saturday 6/30 10:00 - 12:00, 1:00 - 5:00 	Room: 3G in Leavey library lower level
+	Yue - namev.c: lookup, dir_namev, open_namev
+	    open.c: do_open
+	    vfs_syscall.c: do_read
+	
+	Jan - vfs_syscall.c: do_write, do_close, do_dup, do_dup2, do_mknod, do_mkdir
+	
+	Wang - vfs_syscall.c: do_rmdir, do_unlink, do_link, do_rename, do_chdir, do_getdent
+	
+	H - vfs_syscall.c: do_lseek, do_stat
+	    vnode.c: special_file_read, special_file_write
+	    kmain.c: idleproc_run, idleproc_run
+
+	Add self-check and KASSERT when writing the code.
+	Self-check format: dbg(DBG_PRINT, "(GRADING2D function_name number)\n”)
+	Write kshell together.
+**********************************************************************************
+*  dropBox note: Please make sure having usertest.h in path: kernel/include/test *
+**********************************************************************************
+
+//Contacts 
+jkarekar@usc.edu - 323-504-1410
+qiny@usc.edu - 213-706-8672
+hsia947@usc.edu - 323-428-2456
+wang631@usc.edu - 323-397-1948

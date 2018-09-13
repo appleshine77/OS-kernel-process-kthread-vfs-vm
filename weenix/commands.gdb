@@ -1,0 +1,10 @@
+source /mnt/shared-mac/weenix/kernel/main/gdt.gdb
+source /mnt/shared-mac/weenix/kernel/mm/pagetable.gdb
+source /mnt/shared-mac/weenix/kernel/mm/memcheck.py
+source /mnt/shared-mac/weenix/kernel/mm/page.py
+source /mnt/shared-mac/weenix/kernel/mm/slab.py
+source /mnt/shared-mac/weenix/kernel/proc/kthread.gdb
+source /mnt/shared-mac/weenix/kernel/proc/proc.py
+source /mnt/shared-mac/weenix/kernel/util/debug.py
+source /mnt/shared-mac/weenix/kernel/util/list.py
+source /mnt/shared-mac/weenix/kernel/vm/vmmap.gdb
